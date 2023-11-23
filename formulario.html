@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="./img/logotipo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="stylesheet" href="./css/header.css"> 
+</head>
+
+<body>
+    <header>
+        <div class="div-header">
+            <a href="index.html" class="header-link">
+                <img src="./img/logotipo.png" alt="logotipo" class="header-link-img">
+                <p class="header-link-txt">WomanGamers</p>
+            </a>
+
+            <nav class="header-nav">
+                <div id="menu-dropdown">
+                    <a href="index.html" class="header-nav-link">Página inicial</a>
+                    <a href="programacao.html" class="header-nav-link">Programação</a>
+                    <a href="local.html" class="header-nav-link">Local</a>
+                    <a href="formulario.html" class="header-nav-link">Formulário</a>
+                </div>
+                <div>
+                    <button class="btn-menu"><img src="./img/menu.png" alt="Botão do menu" id="img-btn-menu"></button>
+                </div>             
+            </nav>
+        </div>
+
+        <div class="banner">
+            <p class="header-txt-titulo">Formulário</p>
+        </div>
+    </header>
+
+    <main class="formulario">
+
+        <div class="div-form">
+            <form name="presenca">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" class="input" id="nome" placeholder="Digite seu nome aqui"><br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" class="input" id="email" placeholder="Digite seu e-mail aqui"><br><br>
+
+                <label for="participacao">Vai participar?</label><br>
+                <input type="radio" name="partipacao" id="participarei" value="participarei">
+                <label for="participarei">Participarei</label><br>
+                <input type="radio" name="partipacao" id="nao-participarei" value="nao-participarei">
+                <label for="nao-participarei">Não Participarei</label><br><br>
+
+                <label for="formato-participacao">Em qual formato você irá participar?</label><br>
+                <input type="radio" name="formato-participacao" id="presencial" value="pesencial">
+                <label for="presencial">Presencial</label><br>
+                <input type="radio" name="formato-participacao" id="online" value="online">
+                <label for="online">Online</label><br><br>
+
+                <label for="como-ficou-sabendo">Como ficou sabendo do evento?</label><br>
+                <select name="como-ficou-sabendo" id="como-ficou-sabendo">
+                    <option value="website">Website</option>
+                    <option value="redes-sociais">Redes Sociais</option>
+                    <option value="amigo">Amigo</option>
+                    <option value="outro">Outro</option>
+                </select><br><br>
+
+                <label for="jogos-preferidos">Conte-nos que tipos de jogos você prefere?</label><br>
+                <textarea name="jogos-preferidos" id="jogos-preferidos" cols="70" rows="5"></textarea><br><br>
+
+                <label for="comentarios">Comentários e perguntas:</label><br>
+                <textarea name="comentarios" id="comentarios" cols="70" rows="10"></textarea><br><br>
+
+                <div class="div-formulario-botao">
+                    <input type="submit" value="Enviar Formulário" class="botao-formulario" onclick="confirmacao()">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-texto">Criado por Ana Paula da Silva Santos</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

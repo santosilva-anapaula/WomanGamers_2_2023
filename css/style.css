@@ -1,0 +1,262 @@
+body {
+    background-color: var(--color-first);
+    color: var(--color-text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(51, 31, 59, 0.7), rgba(51, 31, 59, 0.7)), url('../img/cabecalho_index.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-txt-data {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-text);
+    text-align: center;
+    padding-top: 5%;
+}
+
+.header-txt-titulo {
+    font-size: 4em;
+    font-family: serif;
+    font-weight: bold;
+    color: var(--color-text);
+    text-align: center;
+    padding: 2% 8%;
+    margin: 2% 10% 2% 10%;
+    border: solid 0.1em;
+}
+
+main{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.conteudo-titulo {
+    font-size: 2.3em;
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.3em;
+    margin: 1em 0.2em;
+}
+
+.div-conteudo-texto {
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.7em;
+    margin: 0 2em 1em 2em;
+}
+
+.div-conteudo-botao {    
+    margin: 1em 0;
+    max-width: 80%;
+}
+
+.conteudo-botao {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--color-text);
+    text-align: center;
+    padding: 8px 40px;
+    display: block;
+    border: solid 0.1em;
+    border-radius: 3px;
+}
+
+.conteudo-botao:hover {
+    background-color: var(--color-hover);
+}
+
+hr {
+    border: solid 1px;
+    width: 80%;
+    margin: 5% auto;
+    border-radius: 8px;
+    border-color: var(--color-hr);
+}
+
+.participacao-especial-titulo {
+    font-family: serif;
+    font-size: 1.9em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.container-participante {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2%;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.participante {
+    width: 100%;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.participante-titulo {
+    font-size: 1.5em;
+    font-family: serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.div-participante-imagem {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.participante-imagem {
+    width: 100%;
+    height: auto;
+}
+
+.participante-lista {
+    margin-bottom: 5%;
+}
+
+.participante-item {
+    list-style: square;
+    padding: 2px;
+    margin-left: 5%;
+    font-size: 1.2em;
+}
+
+.div-botao {
+    border: solid 1px;
+    border-radius: 4px;
+    padding: 6px;
+    text-align: center;
+}
+
+.participante-botao {
+    font-size: 18px;
+    display: block;
+    color: var(--color-text);
+}
+
+.div-botao:hover {
+    background-color: var(--color-hover);
+}
+
+.div-video {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    height: 300px;
+    background-color: black;
+}
+
+.div-video > iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.carrossel-jogos{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%; 
+    max-height: 80vh;
+    overflow: hidden;
+}
+
+.carrosel-titulo{
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-size: 1.9em;
+    font-family: serif;
+}
+
+.container-carrossel{
+    display: flex;
+    width: 300%;
+    margin: 0 auto;
+    align-items: center;
+    transition: margin-left 0.5s ease-in-out;
+}
+
+.carrossel-btn{
+    position: absolute;
+    background: none;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.btn-anterior{
+    left: 10%;
+}
+
+.btn-proximo{
+    right: 10%;
+}
+
+.carrossel-btn:hover{
+    opacity: 1;
+}
+
+.container-carrossel-img{
+    overflow: hidden;
+    width: 100%;
+    max-height: 600px;
+    display: flex;
+}
+
+.carrossel-img{
+    width: 100%;
+    height: auto;
+}
+
+.rodape {
+    background-color: var(--color-footer);
+    text-align: center;
+    padding: 2%;
+    margin-top: 2em;
+    font-size: 1em;
+}
+
+.rodape-texto {
+    color: var(--color-text-footer);
+}
+
+@media screen and (min-width: 768px){
+    main{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .carrossel-jogos{
+        width: 80%;
+    }
+}

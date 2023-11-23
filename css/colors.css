@@ -1,0 +1,16 @@
+:root {
+    --color-first: rgb(46, 19, 62);
+    --color-second: rgb(243, 243, 243);
+    --color-header: rgb(27, 27, 27);
+    --color-card:rgba(255, 255, 255, 0.048);    
+    --color-card-shadow: rgba(255, 255, 255, 0.055);
+    --color-text: white;
+    --color-text-second: rgb(54, 23, 73);
+    --color-text-form: rgb(84, 66, 95);
+    --color-shadow: rgb(159, 158, 158);
+    --color-hover: rgb(86, 65, 100);
+    --color-hover-second: rgb(205, 202, 206);
+    --color-hr: rgba(226, 226, 226, 0.2);
+    --color-footer: rgb(223, 223, 223);
+    --color-text-footer: rgb(35, 15, 48);
+}
