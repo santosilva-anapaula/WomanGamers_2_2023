@@ -2,9 +2,35 @@ body {
     background-color: var(--color-first);
     color: var(--color-text);
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.banner {
+h1, h2{
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.3em;
+    margin: 1em 0.2em;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.3em;    
+}
+
+header{
+    width: 100%;
+}
+
+#banner {
     background-image: linear-gradient(rgba(51, 31, 59, 0.7), rgba(51, 31, 59, 0.7)), url('../img/cabecalho_index.jpg');
     background-size: cover;
     background-position: center;
@@ -17,47 +43,41 @@ body {
     justify-content: center;
 }
 
-.header-txt-data {
+#header-txt-data {
     font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--color-text);
     text-align: center;
-    padding-top: 5%;
 }
 
-.header-txt-titulo {
-    font-size: 4em;
+#header-txt-titulo {
+    font-size: 3em;
     font-family: serif;
     font-weight: bold;
     color: var(--color-text);
     text-align: center;
     padding: 2% 8%;
-    margin: 2% 10% 2% 10%;
     border: solid 0.1em;
 }
 
-main{    
+main, section{
+    width: 90%;
+}
+
+main, section#programacao, section#local{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     align-content: center;
 }
 
-.conteudo-titulo {
-    font-size: 2.3em;
-    font-family: serif;
-    font-weight: bold;
-    text-align: center;
-    padding: 0.3em;
-    margin: 1em 0.2em;
+.texto{
+    font-size: 1em;
+    text-align: justify;    
+    line-height: 1.6em;
 }
 
-.div-conteudo-texto {
-    font-size: 1.1em;
-    text-align: justify;
-    line-height: 1.7em;
-    margin: 0 2em 1em 2em;
+.div-conteudo-texto{
+    margin-bottom: 2em;
 }
 
 .div-conteudo-botao {    
@@ -65,7 +85,7 @@ main{
     max-width: 80%;
 }
 
-.conteudo-botao {
+.botao{
     font-size: 1em;
     font-weight: 600;
     color: var(--color-text);
@@ -76,7 +96,7 @@ main{
     border-radius: 3px;
 }
 
-.conteudo-botao:hover {
+.botao:hover {
     background-color: var(--color-hover);
 }
 
@@ -88,12 +108,12 @@ hr {
     border-color: var(--color-hr);
 }
 
-.participacao-especial-titulo {
-    font-family: serif;
-    font-size: 1.9em;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 5%;
+.programacao-item{
+    margin-bottom: 1em;
+}
+
+.programacao-hora{
+    font-weight: 700;
 }
 
 .container-participante {
@@ -198,7 +218,8 @@ hr {
 .container-carrossel{
     display: flex;
     width: 300%;
-    margin: 0 auto;
+    margin:auto;
+    margin-left: 0;
     align-items: center;
     transition: margin-left 0.5s ease-in-out;
 }
@@ -237,12 +258,35 @@ hr {
     height: auto;
 }
 
+.div-local-botao {
+    margin: 2em auto;
+    padding: 6px;
+    text-align: center; 
+    max-width: 100%;
+}
+
+.local-titulo{
+    margin-top: 2em;
+    margin-bottom: 0.6em;
+}
+
+.div-mapa {
+    padding: 2%;
+    margin: 2em auto;
+    width: 100%;
+}
+
+.local-mapa {
+    width: 100%;
+}
+
 .rodape {
     background-color: var(--color-footer);
     text-align: center;
     padding: 2%;
     margin-top: 2em;
     font-size: 1em;
+    width: 100%;
 }
 
 .rodape-texto {
@@ -254,6 +298,22 @@ hr {
         width: 80%;
         text-align: center;
         margin: auto;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+    
+    h2{
+        font-size: 2.3em;    
+    }
+
+    #header-txt-titulo {
+        font-size: 3.5em;
+    }
+    
+    .div-local-botao {
+        max-width: 50%;
     }
 
     .carrossel-jogos{

@@ -19,9 +19,8 @@
 </head>
 
 <body>
-
     <header>
-        <div class="div-header">
+        <div class="div-header" id="inicio">
             <a href="index.html" class="header-link">
                 <img src="./img/logotipo.png" alt="logotipo" class="header-link-img">
                 <p class="header-link-txt">WomanGamers</p>
@@ -29,20 +28,23 @@
 
             <nav class="header-nav">
                 <div id="menu-dropdown">
-                    <a href="index.html" class="header-nav-link">Página inicial</a>
-                    <a href="programacao.html" class="header-nav-link">Programação</a>
-                    <a href="local.html" class="header-nav-link">Local</a>
-                    <a href="formulario.html" class="header-nav-link">Formulário</a>
+                    <a href="#inicio" class="header-nav-link">Início</a>
+                    <a href="#participacao" class="header-nav-link">Participação especial</a>
+                    <a href="#programacao" class="header-nav-link">Programação</a>                   
+                    <a href="#jogos" class="header-nav-link">Jogos do evento</a>                    
+                    <a href="#local" class="header-nav-link">Local</a>
+                    <a href="formulario.html" class="header-nav-link">Formulário</a> 
                 </div>
+
                 <div>
                     <button class="btn-menu"><img src="./img/menu.png" alt="Botão do menu" id="img-btn-menu"></button>
                 </div>             
             </nav>
         </div>
 
-        <div class="banner">
-            <p class="header-txt-data">Dia 1 de Abril</p>
-            <p class="header-txt-titulo">Woman<br>Gamers</p>
+        <div id="banner">
+            <p id="header-txt-data" class="texto">Dia 1 de Abril</p>
+            <p id="header-txt-titulo" class="texto">Woman<br>Gamers</p>
         </div>
     </header>
 
@@ -50,7 +52,7 @@
         <h1 class="conteudo-titulo"> Evento para mulheres</h1>
 
         <div class="div-conteudo-texto">
-            <p class="conteudo-texto">
+            <p class="conteudo-texto texto">
                 Venha se juntar a nós em um evento emocionante para jogadoras de todos os níveis! Desfrute de um
                 ambiente
                 descontraído e acolhedor enquanto participa de diversas atividades, como demonstrações de jogabilidade
@@ -63,7 +65,7 @@
                 atenda às suas necessidades.
             </p>
 
-            <p class="conteudo-texto">
+            <p class="conteudo-texto texto">
                 Este é o lugar perfeito para se conectar com outras jogadoras, aprender novas habilidades e se divertir
                 muito! Se preferir, você pode participar do evento online ou presencialmente, escolhendo a opção que
                 melhor
@@ -72,22 +74,36 @@
         </div>
 
         <div class="div-conteudo-botao">
-            <a href="formulario.html" class="conteudo-botao">Confirmar presença</a>
+            <a href="formulario.html" class="conteudo-botao botao">Confirmar presença</a>
         </div>
     </main>
 
     <hr>
 
-    <section class="participacao-especial">
+    <section id="programacao">
+        <h2 class="programacao-titulo"> Confira nossa programação</h2>
+
+        <ul class="programacao-lista">
+            <li class="programacao-item"><span class="programacao-hora">14h00 - 14h15: </span>Abertura do evento e boas-vindas aos participantes.</li>
+            <li class="programacao-item"><span class="programacao-hora">14h15 - 15h00: </span>Demonstração de jogabilidade de jogos recém-lançados.</li>
+            <li class="programacao-item"><span class="programacao-hora">15h00 - 15h45: </span>Palestra com um profissional da indústria de jogos.</li>
+            <li class="programacao-item"><span class="programacao-hora">15h45 - 16h00: </span>Intervalo.</li>
+            <li class="programacao-item"><span class="programacao-hora">16h00 - 17h00: </span>Competição de jogos em equipe.</li>
+            <li class="programacao-item"><span class="programacao-hora">17h00 - 17h30: </span>Competição de jogos individuais.</li>
+            <li class="programacao-item"><span class="programacao-hora">17h30 - 18h30: </span>Participação especial.</li>
+            <li class="programacao-item"><span class="programacao-hora">18h30 - 18h50: </span>Encerramento do evento com agradecimentos aos participantes.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section class="participacao-especial" id="participacao">
         <h2 class="participacao-especial-titulo">Participação especial</h2>
 
         <div class="container-participante">
-
             <div class="participante">
-
                 <div class="div-participante-imagem">
                     <img src="./img/ulve400x400.jpg" alt="imagem ulverina" class="participante-imagem">
-
                 </div>
 
                 <h3 class="participante-titulo">Ulverina</h3>
@@ -110,7 +126,6 @@
             </div>
 
             <div class="participante">
-
                 <div class="div-participante-imagem">
                     <img src="./img/thi400x400.jpg" alt="imagem thiesca" class="participante-imagem">
                 </div>
@@ -139,7 +154,7 @@
 
     <hr>
 
-    <section class="carrossel-jogos">
+    <section class="carrossel-jogos" id="jogos">
         <h2 class="carrosel-titulo">Confira alguns jogos do evento</h4>
             <div class="container-carrossel">
                 <div class="container-carrossel-btn">
@@ -153,11 +168,45 @@
             </div>
     </section>
 
+    <hr>
+
+    <section class="local" id="local">
+        <div class="div-local">
+            <h2 class="local-titulo">Local</h2>
+
+            <p class="local-texto texto">
+                Você pode participar online, participando
+                de várias atividades e interagindo com outras jogadoras virtualmente.
+            </p>
+
+            <div class="div-local-botao">
+                <a href="https://www.youtube.com/channel/UCu_oYDJ7cGSK59KBp38XkpQ" class="local-botao botao">Acesse o
+                    evento online</a>
+            </div>
+
+            <p class="local-texto texto">
+                Se preferir participar presencialmente, o evento será realizado em nosso espaço exclusivo para
+                jogadoras. Este é o lugar perfeito para se conectar, aprender novas habilidades e se divertir muito!
+            </p>
+
+            <h5 class="local-titulo">São Paulo Expo</h5>
+
+            <p class="local-texto texto">Rodovia dos Imigrantes, 1,5 km - Vila Água Funda, São Paulo - SP, 04329-900,
+                Brasil.</p>
+        </div>
+
+        <div class="div-mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.9082812522643!2d-46.62943929999999!3d-23.6434555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b204dc791ef%3A0x54aaf4a154737160!2sRod.%20dos%20Imigrantes%2C%201%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004329-100%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1681750464458!5m2!1spt-BR!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="local-mapa"></iframe>
+        </div>
+    </section>
+
     <footer class="rodape">
         <p class="rodape-texto">Criado por Ana Paula da Silva Santos</p>
     </footer>
 
     <script src="./js/script.js"></script>
 </body>
-
 </html>
