@@ -6,14 +6,6 @@ document.querySelector(".btn-menu").addEventListener('click', function(){
     document.querySelector("#menu-dropdown").classList.toggle("expanded");
 });
 
-// function abrirMenu() {
-//     document.querySelector("#menu-dropdown").style.display = "block";
-// }
-
-// function fecharMenu() {
-//     document.querySelector("#menu-dropdown").style.display = "none";
-// }
-
 let currentMargin = 0;
 const marginStep = 100;
 
